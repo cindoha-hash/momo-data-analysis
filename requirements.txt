@@ -1,0 +1,9 @@
+# Week 1 project setup dependencies
+# Future ETL implementation
+python-dateutil
+lxml
+
+# Optional future API
+# fastapi
+# uvicorn
+# pydantic

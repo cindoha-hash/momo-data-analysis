@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MoMo Analytics Dashboard</title>
-  <link rel="stylesheet" href="web/styles.css">
+    <meta charset="UTF-8">
+    <title>MoMo SMS Analytics Dashboard</title>
+    <link rel="stylesheet" href="web/styles.css">
 </head>
 <body>
-  <main>
-    <h1>MoMo Analytics Dashboard</h1>
-    <p>Dashboard implementation will be developed in a later phase.</p>
-  </main>
-  <script src="web/chart_handler.js"></script>
+    <header>
+        <h1>MoMo SMS Analytics Dashboard</h1>
+    </header>
+
+    <main>
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>Total Transactions: <span id="total-transactions">--</span></p>
+        </section>
+
+        <section id="charts">
+            <h2>Transaction Breakdown</h2>
+            <canvas id="category-chart"></canvas>
+        </section>
+
+        <section id="transactions-table">
+            <h2>Recent Transactions</h2>
+            <table id="txn-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="web/chart_handler.js"></script>
 </body>
 </html>

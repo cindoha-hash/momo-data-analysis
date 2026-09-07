@@ -1,25 +1,17 @@
+
 # Python
 __pycache__/
-*.py[cod]
+*.pyc
 .venv/
 venv/
-env/
 
-# Environment variables
+# Environment
 .env
 
-# Database
-data/db.sqlite3
-
-# Raw/private data
+# Data
 data/raw/*
 !data/raw/.gitkeep
-
-# Generated/processed data
-data/processed/*
-!data/processed/.gitkeep
-
-# Logs
+data/db.sqlite3
 data/logs/*
 !data/logs/.gitkeep
 data/logs/dead_letter/*
@@ -27,8 +19,3 @@ data/logs/dead_letter/*
 
 # OS
 .DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/

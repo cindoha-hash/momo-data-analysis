@@ -1,5 +1,7 @@
 # Scrum Board — Initial Tasks
 
+Trello board: https://trello.com/b/aadeNi62/momo-analytics-project-board
+
 ## To Do
 - Research MoMo XML data structure
 - Design relational database schema

@@ -80,7 +80,7 @@ The architecture diagram shows how data moves through the system, from the raw M
 
 We're using a Scrum board to keep track of tasks and progress.
 
-**Scrum Board:** `[Add GitHub Projects, Trello, or Jira URL]`
+**Trello Board:** https://trello.com/b/aadeNi62/momo-analytics-project-board
 
 Columns: To Do -> In Progress -> Done
 
@@ -116,7 +116,7 @@ This project is being developed for the **Team Setup and Project Planning** asse
 - Architecture diagram: [docs/architecture.png](docs/architecture.png)
 - Editable architecture source: [docs/architecture.drawio](docs/architecture.drawio)
 - Scrum board: [docs/scrum-board.md](docs/scrum-board.md)
-- External Scrum board URL: `[Add GitHub Projects, Trello, or Jira URL]`
+- External Scrum board URL: https://trello.com/b/aadeNi62/momo-analytics-project-board
 
 ### Completion Checklist
 
@@ -124,7 +124,7 @@ This project is being developed for the **Team Setup and Project Planning** asse
 - [ ] All teammates invited as GitHub collaborators.
 - [x] Architecture diagram committed to the repository.
 - [x] Scrum board structure and initial tasks documented.
-- [ ] External Scrum board URL added above.
+- [x] External Scrum board URL added above.
 - [ ] Final dashboard and data-processing workflow demonstrated with sample XML data.
 
 ## Development Roadmap
@@ -194,4 +194,4 @@ The dashboard is available locally, and the ETL, database, API, and deployment w
 
 The website will be deployed on Vercel.
 
-**Vercel deployment URL:** `[Add Vercel URL after deployment]`
+

@@ -1,1 +1,1 @@
-# Optional FastAPI package for analytics endpoints
+"""API package for the dashboard endpoints."""

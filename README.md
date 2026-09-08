@@ -9,8 +9,8 @@ markdown
 
 | Name | Role |
 |------|------|
-| IRADUKUNDA CYUSA Kevin | Backend / ETL / Architecture / Scrum Board |
-| [Fill Name] | Frontend / Documentation |
+| Kelvin | Backend / ETL / Database / API |
+| Emmanuel Chetachi Amarikwa | Frontend / Dashboard / Documentation |
 
 ## Repository
 
@@ -20,7 +20,7 @@ GitHub Repo: https://github.com/cindoha-hash/momo-data-analysis.git
 
 This project processes MoMo SMS transaction data provided in XML format. We parse the raw XML, clean and normalize the data (fixing dates, amounts, phone numbers), sort transactions into categories (like deposits, withdrawals, transfers, etc.), and store everything in a SQLite database. From there we build a simple web dashboard so we can see stats like total transactions, most common category, and spending trends over time.
 
-## Planned Data Flow
+## Data Flow
 
 MoMo XML -> XML Parsing -> Cleaning & Normalization -> Categorization -> SQLite Database -> Analytics/API -> Web Dashboard
 
@@ -35,7 +35,7 @@ MoMo XML -> XML Parsing -> Cleaning & Normalization -> Categorization -> SQLite 
 - Present results through a simple and accessible dashboard
 - Practice collaborative software development using GitHub and Agile/Scrum
 
-## Planned Technology Stack
+## Technology Stack
 
 - **Backend/Data Processing:** Python, ElementTree/lxml, python-dateutil
 - **Database:** SQLite
@@ -80,11 +80,54 @@ The architecture diagram shows how data moves through the system, from the raw M
 
 We're using a Scrum board to keep track of tasks and progress.
 
-**Scrum Board:** [Paste your GitHub Projects link here]
+**Scrum Board:** `[Add GitHub Projects, Trello, or Jira URL]`
 
 Columns: To Do -> In Progress -> Done
 
-## Development Plan
+Local task board: [docs/scrum-board.md](docs/scrum-board.md)
+
+## Assignment Requirements and Expectations
+
+This project is being developed for the **Team Setup and Project Planning** assessment. The expected outcome is an enterprise-style full-stack application that processes MoMo SMS data and presents useful analytics.
+
+### Required Project Work
+
+- Create and maintain a shared GitHub repository.
+- Add all teammates as repository collaborators.
+- Keep this README updated with the team name, member list, project description, setup instructions, and project links.
+- Organize the repository into data, ETL, API, frontend, scripts, documentation, and tests.
+- Design a high-level architecture showing the flow from MoMo XML input through processing, storage, API or analytics, and the dashboard.
+- Create a Scrum board with **To Do**, **In Progress**, and **Done** columns.
+- Add at least three initial tasks to the Scrum board and update task status as work progresses.
+
+### Expected System Capabilities
+
+- Parse MoMo SMS records from XML.
+- Clean and normalize transaction amounts, dates, and phone numbers.
+- Categorize transactions such as deposits, withdrawals, transfers, payments, and airtime.
+- Store structured transactions in a relational database, using SQLite for this project.
+- Produce processed data and analytics for the frontend dashboard.
+- Provide a usable web interface with summary statistics, charts, and transaction tables.
+- Include tests for parsing, cleaning, and categorization.
+
+### Assessment Deliverables
+
+- GitHub repository link: https://github.com/cindoha-hash/momo-data-analysis.git
+- Architecture diagram: [docs/architecture.png](docs/architecture.png)
+- Editable architecture source: [docs/architecture.drawio](docs/architecture.drawio)
+- Scrum board: [docs/scrum-board.md](docs/scrum-board.md)
+- External Scrum board URL: `[Add GitHub Projects, Trello, or Jira URL]`
+
+### Completion Checklist
+
+- [x] Repository created and README added.
+- [ ] All teammates invited as GitHub collaborators.
+- [x] Architecture diagram committed to the repository.
+- [x] Scrum board structure and initial tasks documented.
+- [ ] External Scrum board URL added above.
+- [ ] Final dashboard and data-processing workflow demonstrated with sample XML data.
+
+## Development Roadmap
 
 **Phase 1 - Project Setup**
 - Create GitHub repository
@@ -138,15 +181,17 @@ main
 
 **Week 1 - Team Setup & Project Planning**
 
-Current priorities:
+Current focus:
 - Repository setup
 - Team collaboration
 - Architecture
 - Project organization
 - Scrum planning
 
-Implementation of the ETL pipeline, database, API, and dashboard will follow in the next phases.
+The dashboard is available locally, and the ETL, database, API, and deployment workflow are being completed in parallel.
 
 ## Hosting
 
-The frontend dashboard is hosted on GitHub Pages: https://cindoha-hash.github.io/momo-data-analysis/
+The website will be deployed on Vercel.
+
+**Vercel deployment URL:** `[Add Vercel URL after deployment]`

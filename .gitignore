@@ -18,3 +18,5 @@ data/logs/dead_letter/*
 
 # OS
 .DS_Store
+
+.vercel

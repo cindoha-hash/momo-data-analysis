@@ -1,14 +1,8 @@
-"""
-Applies simple rules to categorize each transaction.
-Implementation to be completed in Phase 2.
-"""
-from etl.config import CATEGORIES
+"""Assign a transaction category from the message text."""
 
 
 def categorize_transaction(txn: dict) -> str:
-    """
-    Given a cleaned transaction, return its category.
-    """
+    """Return the first category matched in a transaction message."""
     message = txn.get("message", "").lower()
 
     if "deposit" in message:

@@ -1,0 +1,17 @@
+[
+  {
+    "date": "2026-09-01",
+    "amount": 25000,
+    "category": "deposit"
+  },
+  {
+    "date": "2026-09-02",
+    "amount": 7500,
+    "category": "payment"
+  },
+  {
+    "date": "2026-09-03",
+    "amount": 3000,
+    "category": "airtime"
+  }
+]

@@ -1,7 +1,4 @@
-"""
-Creates tables and loads transactions into SQLite.
-Implementation to be completed in Phase 3 (Database).
-"""
+"""Create the SQLite table and save processed transactions."""
 import sqlite3
 from etl.config import DATABASE_PATH
 

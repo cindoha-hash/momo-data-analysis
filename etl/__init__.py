@@ -1,1 +1,1 @@
-# ETL package for MoMo SMS data processing
+"""ETL steps for importing and preparing MoMo transactions."""

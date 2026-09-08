@@ -1,7 +1,4 @@
-"""
-Minimal FastAPI app exposing /transactions and /analytics
-Optional bonus - to be implemented in Phase 4.
-"""
+"""HTTP endpoints for the transaction dashboard."""
 from fastapi import FastAPI
 from api.db import get_connection
 

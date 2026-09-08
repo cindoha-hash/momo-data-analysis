@@ -1,3 +1,4 @@
+markdown
 # MoMo SMS Data Processing & Analytics
 
 ## Team
@@ -45,29 +46,28 @@ MoMo XML -> XML Parsing -> Cleaning & Normalization -> Categorization -> SQLite 
 
 ## Repository Structure
 
-```
 .
 |-- README.md
 |-- .env.example
 |-- requirements.txt
 |-- index.html
 |-- docs/
-|   |-- architecture.drawio
-|   |-- architecture.png
+| |-- architecture.drawio
+| |-- architecture.png
 |-- web/
-|   |-- styles.css
-|   |-- chart_handler.js
-|   |-- assets/
+| |-- styles.css
+| |-- chart_handler.js
+| |-- assets/
 |-- data/
-|   |-- raw/
-|   |-- processed/
-|   |-- logs/
-|       |-- dead_letter/
+| |-- raw/
+| |-- processed/
+| |-- logs/
+| |-- dead_letter/
 |-- etl/
 |-- api/
 |-- scripts/
 |-- tests/
-```
+
 
 ## System Architecture
 
@@ -75,7 +75,6 @@ The architecture diagram shows how data moves through the system, from the raw M
 
 - Architecture diagram: `docs/architecture.png`
 - Editable Draw.io source: `docs/architecture.drawio`
-- Draw.io link: [Paste your Draw.io share link here]
 
 ## Scrum Board
 
@@ -128,13 +127,12 @@ Columns: To Do -> In Progress -> Done
 
 We're using GitHub for collaborative development. Each feature is built on its own branch and merged into main through pull requests.
 
-```
 main
 |-- feature/xml-parser
 |-- feature/data-cleaning
 |-- feature/database
 |-- feature/dashboard
-```
+
 
 ## Current Status
 

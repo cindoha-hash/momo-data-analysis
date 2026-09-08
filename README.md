@@ -14,7 +14,7 @@ markdown
 
 ## Repository
 
-GitHub Repo: https://github.com/cindoha-hash/momo-data-analysis
+GitHub Repo: https://github.com/cindoha-hash/momo-data-analysis.git
 
 ## Project Description
 

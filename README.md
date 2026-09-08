@@ -1,4 +1,3 @@
-markdown
 # MoMo SMS Data Processing & Analytics
 
 ## Team
@@ -22,7 +21,7 @@ This project processes MoMo SMS transaction data provided in XML format. We pars
 
 ## Planned Data Flow
 
-MoMo XML → XML Parsing → Cleaning & Normalization → Categorization → SQLite Database → Analytics/API → Web Dashboard
+MoMo XML -> XML Parsing -> Cleaning & Normalization -> Categorization -> SQLite Database -> Analytics/API -> Web Dashboard
 
 ## Project Objectives
 
@@ -46,32 +45,33 @@ MoMo XML → XML Parsing → Cleaning & Normalization → Categorization → SQL
 
 ## Repository Structure
 
+```
 .
-├── README.md
-├── .env.example
-├── requirements.txt
-├── index.html
-├── docs/
-│ ├── architecture.drawio
-│ └── architecture.png
-├── web/
-│ ├── styles.css
-│ ├── chart_handler.js
-│ └── assets/
-├── data/
-│ ├── raw/
-│ ├── processed/
-│ └── logs/
-│ └── dead_letter/
-├── etl/
-├── api/
-├── scripts/
-└── tests/
-
+|-- README.md
+|-- .env.example
+|-- requirements.txt
+|-- index.html
+|-- docs/
+|   |-- architecture.drawio
+|   |-- architecture.png
+|-- web/
+|   |-- styles.css
+|   |-- chart_handler.js
+|   |-- assets/
+|-- data/
+|   |-- raw/
+|   |-- processed/
+|   |-- logs/
+|       |-- dead_letter/
+|-- etl/
+|-- api/
+|-- scripts/
+|-- tests/
+```
 
 ## System Architecture
 
-The architecture diagram shows how data moves through the system — from the raw MoMo XML file, through parsing and cleaning, into the database, and finally out to the dashboard.
+The architecture diagram shows how data moves through the system, from the raw MoMo XML file, through parsing and cleaning, into the database, and finally out to the dashboard.
 
 - Architecture diagram: `docs/architecture.png`
 - Editable Draw.io source: `docs/architecture.drawio`
@@ -83,41 +83,41 @@ We're using a Scrum board to keep track of tasks and progress.
 
 **Scrum Board:** [Paste your GitHub Projects link here]
 
-Columns: To Do → In Progress → Done
+Columns: To Do -> In Progress -> Done
 
 ## Development Plan
 
-**Phase 1 — Project Setup**
+**Phase 1 - Project Setup**
 - Create GitHub repository
 - Add team members
 - Define architecture
 - Create Scrum board
 - Define database schema
 
-**Phase 2 — Data Processing**
+**Phase 2 - Data Processing**
 - Analyze XML structure
 - Implement XML parser
 - Clean and normalize transaction data
 - Categorize transactions
 
-**Phase 3 — Database**
+**Phase 3 - Database**
 - Design relational schema
 - Create SQLite database
 - Load processed transactions
 - Implement database queries
 
-**Phase 4 — Analytics & API**
+**Phase 4 - Analytics & API**
 - Generate transaction statistics
 - Create analytics endpoints
 - Prepare dashboard data
 
-**Phase 5 — Frontend**
+**Phase 5 - Frontend**
 - Build dashboard
 - Display transaction statistics
 - Add charts and tables
 - Improve accessibility
 
-**Phase 6 — Testing & Documentation**
+**Phase 6 - Testing & Documentation**
 - Test XML parsing
 - Test data cleaning
 - Test categorization
@@ -128,16 +128,17 @@ Columns: To Do → In Progress → Done
 
 We're using GitHub for collaborative development. Each feature is built on its own branch and merged into main through pull requests.
 
+```
 main
-├── feature/xml-parser
-├── feature/data-cleaning
-├── feature/database
-└── feature/dashboard
-
+|-- feature/xml-parser
+|-- feature/data-cleaning
+|-- feature/database
+|-- feature/dashboard
+```
 
 ## Current Status
 
-**Week 1 — Team Setup & Project Planning**
+**Week 1 - Team Setup & Project Planning**
 
 Current priorities:
 - Repository setup
@@ -147,3 +148,7 @@ Current priorities:
 - Scrum planning
 
 Implementation of the ETL pipeline, database, API, and dashboard will follow in the next phases.
+
+## Hosting
+
+The frontend dashboard is hosted on GitHub Pages: https://cindoha-hash.github.io/momo-data-analysis/

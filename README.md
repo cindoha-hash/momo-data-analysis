@@ -11,7 +11,11 @@ markdown
 |------|------|
 | IRADUKUNDA Cyusa Kevin | Backend / ETL / Database / API |
 | Emmanuel Chetachi Amarikwa | Frontend / Dashboard / Documentation |
+<<<<<<< HEAD
 | Sylvie Uwera | Query Validation |
+=======
+| Sylvie Uwera | SQL queries / Database testing / Design document |
+>>>>>>> feature/database
 
 ## Repository
 
@@ -55,6 +59,13 @@ MoMo XML -> XML Parsing -> Cleaning & Normalization -> Categorization -> SQLite 
 |-- docs/
 | |-- architecture.drawio
 | |-- architecture.png
+| |-- erd_diagram.png
+|-- database/
+| |-- database_setup.sql
+| |-- sample_queries.sql
+| |-- security_rules.sql
+|-- examples/
+| |-- json_schemas.json
 |-- web/
 | |-- styles.css
 | |-- chart_handler.js
@@ -76,6 +87,14 @@ The architecture diagram shows how data moves through the system, from the raw M
 
 - Architecture diagram: `docs/architecture.png`
 - Editable Draw.io source: `docs/architecture.drawio`
+- Week 2 ERD: `docs/erd_diagram.png`
+
+## Week 2 Database Deliverables
+
+- Database schema, constraints, indexes, and sample data: `database/database_setup.sql`
+- Sample joins, filters, and aggregate queries: `database/sample_queries.sql`
+- Security and accuracy rules: `database/security_rules.sql`
+- JSON entity models and SQL-to-JSON mapping: `examples/json_schemas.json`
 
 ## Scrum Board
 
@@ -116,6 +135,11 @@ This project is being developed for the **Team Setup and Project Planning** asse
 - GitHub repository link: https://github.com/cindoha-hash/momo-data-analysis.git
 - Architecture diagram: [docs/architecture.png](docs/architecture.png)
 - Editable architecture source: [docs/architecture.drawio](docs/architecture.drawio)
+- ERD diagram: [docs/erd_diagram.png](docs/erd_diagram.png)
+- Database setup script: [database/database_setup.sql](database/database_setup.sql)
+- Sample queries: [database/sample_queries.sql](database/sample_queries.sql)
+- Security rules: [database/security_rules.sql](database/security_rules.sql)
+- JSON models: [examples/json_schemas.json](examples/json_schemas.json)
 - Scrum board: [docs/scrum-board.md](docs/scrum-board.md)
 - External Scrum board URL: https://trello.com/b/aadeNi62/momo-analytics-project-board
 
@@ -180,14 +204,13 @@ main
 
 ## Current Status
 
-**Week 1 - Team Setup & Project Planning**
+**Week 2 - Database Design and Implementation**
 
 Current focus:
-- Repository setup
-- Team collaboration
-- Architecture
-- Project organization
-- Scrum planning
+- Database schema and ERD
+- Sample SQL queries and security rules
+- JSON modeling and SQL-to-JSON mapping
+- MySQL testing evidence and design documentation
 
 The dashboard is available locally, and the ETL, database, API, and deployment workflow are being completed in parallel.
 

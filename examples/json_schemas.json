@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MoMo Analytics API JSON Models",
+  "description": "Example JSON representations of the relational MoMo transaction database.",
+  "version": "1.0.0",
+  "sql_to_json_mapping": {
+    "Users": {
+      "user_id": "user.id",
+      "name": "user.name",
+      "phone_number": "user.phoneNumber",
+      "account_number": "user.accountNumber",
+      "type": "user.type",
+      "created_at": "user.createdAt"
+    },
+    "Transaction_Categories": {
+      "category_id": "category.id",
+      "category_name": "category.name",
+      "description": "category.description"
+    },
+    "Transactions": {
+      "transaction_id": "transaction.id",
+      "amount": "transaction.amount",
+      "transaction_time": "transaction.transactionTime",
+      "fee": "transaction.fee",
+      "new_balance": "transaction.newBalance",
+      "tx_id": "transaction.transactionId",
+      "financial_transaction_id": "transaction.financialTransactionId",
+      "external_transaction_id": "transaction.externalTransactionId",
+      "status": "transaction.status",
+      "category_id": "transaction.category.id",
+      "sender_id": "transaction.sender.id",
+      "recipient_id": "transaction.recipient.id",
+      "agent_id": "transaction.agent.id"
+    },
+    "Transaction_Parties": {
+      "transaction_id": "transaction.parties[].transactionId",
+      "user_id": "transaction.parties[].userId",
+      "party_role": "transaction.parties[].role"
+    },
+    "System_Logs": {
+      "log_id": "log.id",
+      "process_name": "log.processName",
+      "log_level": "log.level",
+      "message": "log.message",
+      "records_affected": "log.recordsAffected",
+      "logged_at": "log.loggedAt"
+    }
+  },
+  "entity_examples": {
+    "user": {
+      "id": 1,
+      "name": "Abebe Chala CHEBUDIE",
+      "phoneNumber": null,
+      "accountNumber": "36521838",
+      "type": "self",
+      "createdAt": "2024-05-26T09:00:00Z"
+    },
+    "transactionCategory": {
+      "id": 2,
+      "name": "withdrawal",
+      "description": "Money withdrawn through an agent or cash-out."
+    },
+    "transaction": {
+      "id": 1,
+      "amount": 20000.0,
+      "currency": "RWF",
+      "transactionTime": "2024-05-26T09:15:00Z",
+      "fee": 500.0,
+      "newBalance": 80000.0,
+      "transactionId": "TXN-0001",
+      "financialTransactionId": "FIN-0001",
+      "externalTransactionId": null,
+      "status": "completed",
+      "categoryId": 2
+    },
+    "systemLog": {
+      "id": 1,
+      "processName": "xml_parser",
+      "level": "INFO",
+      "message": "XML file parsed successfully.",
+      "recordsAffected": 5,
+      "loggedAt": "2024-05-26T09:20:00Z"
+    }
+  },
+  "complex_transaction_example": {
+    "id": 3,
+    "amount": 15000.0,
+    "currency": "RWF",
+    "transactionTime": "2024-05-28T13:40:00Z",
+    "fee": 0.0,
+    "newBalance": 115000.0,
+    "transactionId": "TXN-0003",
+    "financialTransactionId": "FIN-0003",
+    "externalTransactionId": "EXT-0003",
+    "status": "completed",
+    "category": {
+      "id": 3,
+      "name": "transfer",
+      "description": "Money sent to another mobile money account."
+    },
+    "sender": {
+      "id": 1,
+      "name": "Abebe Chala CHEBUDIE",
+      "phoneNumber": null,
+      "accountNumber": "36521838",
+      "type": "self"
+    },
+    "recipient": {
+      "id": 3,
+      "name": "Jean Uwase",
+      "phoneNumber": "250788123456",
+      "accountNumber": "45001234",
+      "type": "individual"
+    },
+    "agent": null,
+    "parties": [
+      {
+        "transactionId": 3,
+        "userId": 1,
+        "role": "sender"
+      },
+      {
+        "transactionId": 3,
+        "userId": 3,
+        "role": "recipient"
+      }
+    ]
+  }
+}

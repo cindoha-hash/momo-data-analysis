@@ -9,7 +9,7 @@ markdown
 
 | Name | Role |
 |------|------|
-| Kelvin | Backend / ETL / Database / API |
+| IRADUKUNDA Cyusa Kevin | Backend / ETL / Database / API |
 | Emmanuel Chetachi Amarikwa | Frontend / Dashboard / Documentation |
 
 ## Repository

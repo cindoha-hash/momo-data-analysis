@@ -1,6 +1,4 @@
--- ================================================
--- 1. JOIN: Full transaction detail with sender/recipient names and category
--- ================================================
+-- Show each transaction with its category and related users.
 SELECT 
     t.transaction_id,
     t.amount,
@@ -18,9 +16,7 @@ LEFT JOIN Users recipient ON t.recipient_id = recipient.user_id
 LEFT JOIN Users agent ON t.agent_id = agent.user_id
 ORDER BY t.transaction_time DESC;
 
--- ================================================
--- 2. AGGREGATE: Total volume and fee revenue by category
--- ================================================
+-- Summarize transaction volume and fees for each category.
 SELECT 
     tc.category_name,
     COUNT(t.transaction_id) AS total_transactions,
@@ -32,9 +28,7 @@ JOIN Transaction_Categories tc ON t.category_id = tc.category_id
 GROUP BY tc.category_name
 ORDER BY total_volume DESC;
 
--- ================================================
--- 3. AGGREGATE + FILTER: Top senders by total amount sent (with HAVING)
--- ================================================
+-- Find completed transactions grouped by sender.
 SELECT 
     u.name AS sender_name,
     COUNT(t.transaction_id) AS num_transactions,
@@ -46,9 +40,7 @@ GROUP BY u.name
 HAVING SUM(t.amount) > 1000
 ORDER BY total_sent DESC;
 
--- ================================================
--- 4. FILTER: Failed or reversed transactions (data integrity check)
--- ================================================
+-- List transactions that failed or were reversed.
 SELECT 
     t.transaction_id,
     t.amount,
@@ -60,9 +52,7 @@ JOIN Transaction_Categories tc ON t.category_id = tc.category_id
 WHERE t.status IN ('failed', 'reversed')
 ORDER BY t.transaction_time DESC;
 
--- ================================================
--- 5. FILTER (date range): Monthly transaction volume trend
--- ================================================
+-- Show monthly totals for completed transactions.
 SELECT 
     DATE_FORMAT(t.transaction_time, '%Y-%m') AS month,
     COUNT(t.transaction_id) AS transaction_count,
@@ -72,10 +62,7 @@ WHERE t.status = 'completed'
 GROUP BY DATE_FORMAT(t.transaction_time, '%Y-%m')
 ORDER BY month;
 
--- ================================================
--- 6. COMPLEX: Full transaction object with everything nested
--- (matches the "complex JSON object" requirement — share with Emmanuel)
--- ================================================
+-- Return the details used in a nested transaction response.
 SELECT 
     t.transaction_id,
     t.amount,

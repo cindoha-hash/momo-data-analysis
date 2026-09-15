@@ -1,4 +1,3 @@
-markdown
 # MoMo SMS Data Processing & Analytics
 
 ## Team
@@ -10,12 +9,8 @@ markdown
 | Name | Role |
 |------|------|
 | IRADUKUNDA Cyusa Kevin | Backend / ETL / Database / API |
-| Emmanuel Chetachi Amarikwa | Frontend / Dashboard / Documentation |
-<<<<<<< HEAD
-| Sylvie Uwera | Query Validation |
-=======
-| Sylvie Uwera | SQL queries / Database testing / Design document |
->>>>>>> feature/database
+| Emmanuel Chetachi Amarikwa | Frontend / Dashboard / Documentation g / Design document  |
+| Sylvie Uwera | SQL queries / Database testing / Query validation |
 
 ## Repository
 
@@ -23,7 +18,7 @@ GitHub Repo: https://github.com/cindoha-hash/momo-data-analysis.git
 
 ## Project Description
 
-This project processes MoMo SMS transaction data provided in XML format. We parse the raw XML, clean and normalize the data (fixing dates, amounts, phone numbers), sort transactions into categories (like deposits, withdrawals, transfers, etc.), and store everything in a SQLite database. From there we build a simple web dashboard so we can see stats like total transactions, most common category, and spending trends over time.
+This project turns MoMo SMS records from XML into structured transaction data. The ETL pipeline parses each record, normalizes dates, amounts, and phone numbers, assigns a category, and prepares the results for database queries and the dashboard. The database work covers customers, transaction parties, categories, transaction records, and processing logs.
 
 ## Data Flow
 
@@ -38,7 +33,7 @@ MoMo XML -> XML Parsing -> Cleaning & Normalization -> Categorization -> SQLite 
 - Store structured transaction data in a relational database
 - Generate useful transaction analytics
 - Present results through a simple and accessible dashboard
-- Practice collaborative software development using GitHub and Agile/Scrum
+- Track the team's work through GitHub branches, commits, pull requests, and Scrum tasks
 
 ## Technology Stack
 
@@ -108,7 +103,7 @@ Local task board: [docs/scrum-board.md](docs/scrum-board.md)
 
 ## Assignment Requirements and Expectations
 
-This project is being developed for the **Team Setup and Project Planning** assessment. The expected outcome is an enterprise-style full-stack application that processes MoMo SMS data and presents useful analytics.
+This project is being developed for the **Team Setup and Project Planning** assessment. The team is building a small full-stack application that processes MoMo SMS data and presents useful transaction analytics.
 
 ### Required Project Work
 
@@ -216,6 +211,7 @@ The dashboard is available locally, and the ETL, database, API, and deployment w
 
 ## Hosting
 
-The website will be deployed on Vercel.
+The website will be deployed on  github page .
+https://cindoha-hash.github.io/momo-data-analysis/
 
 

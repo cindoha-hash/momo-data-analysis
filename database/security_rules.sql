@@ -1,6 +1,4 @@
--- ================================================
--- SECURITY RULE 1: Prevent negative balance
--- ================================================
+-- Reject a transaction that would leave a negative balance.
 DELIMITER //
 CREATE TRIGGER prevent_negative_balance
 BEFORE INSERT ON Transactions
@@ -13,9 +11,7 @@ BEGIN
 END//
 DELIMITER ;
 
--- ================================================
--- SECURITY RULE 2: Sender and recipient can't be the same person
--- ================================================
+-- Prevent a user from being both sender and recipient.
 ALTER TABLE Transactions
 ADD CONSTRAINT chk_sender_recipient_different
 CHECK (sender_id IS NULL OR recipient_id IS NULL OR sender_id != recipient_id);

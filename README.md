@@ -11,6 +11,7 @@ markdown
 |------|------|
 | IRADUKUNDA Cyusa Kevin | Backend / ETL / Database / API |
 | Emmanuel Chetachi Amarikwa | Frontend / Dashboard / Documentation |
+| Sylvie Uwera | Query Validation |
 
 ## Repository
 

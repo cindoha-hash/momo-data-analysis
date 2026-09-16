@@ -48,6 +48,7 @@ MoMo XML -> XML Parsing -> Cleaning & Normalization -> Categorization -> SQLite 
 
 .
 |-- README.md
+|-- AI_USAGE_LOG.md
 |-- .env.example
 |-- requirements.txt
 |-- index.html
@@ -90,6 +91,7 @@ The architecture diagram shows how data moves through the system, from the raw M
 - Sample joins, filters, and aggregate queries: `database/sample_queries.sql`
 - Security and accuracy rules: `database/security_rules.sql`
 - JSON entity models and SQL-to-JSON mapping: `examples/json_schemas.json`
+- AI usage log: `AI_USAGE_LOG.md`
 
 ## Scrum Board
 
@@ -137,6 +139,7 @@ This project is being developed for the **Team Setup and Project Planning** asse
 - JSON models: [examples/json_schemas.json](examples/json_schemas.json)
 - Scrum board: [docs/scrum-board.md](docs/scrum-board.md)
 - External Scrum board URL: https://trello.com/b/aadeNi62/momo-analytics-project-board
+- AI usage log: [AI_USAGE_LOG.md](AI_USAGE_LOG.md)
 
 ### Completion Checklist
 
@@ -213,5 +216,3 @@ The dashboard is available locally, and the ETL, database, API, and deployment w
 
 The website will be deployed on  github page .
 https://cindoha-hash.github.io/momo-data-analysis/
-
-
